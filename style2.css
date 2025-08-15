@@ -1,0 +1,155 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; /* Changed font */
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    background-color: #0b1a2b; /* Dark background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Card Container */
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #1e3a5f, #3b5a83); /* New gradient */
+    color: #f0f2f5; /* Light gray text for contrast */
+    border-radius: 25px; /* Slightly more rounded corners */
+    padding: 40px 35px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Added a subtle shadow */
+    position: relative;
+    overflow: hidden; /* Ensures no content overflows */
+}
+
+/* Search Bar Section */
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+/* Search Input Field */
+.search input {
+    border: 0;
+    outline: none;
+    background: #0d2138; /* Darker input background */
+    color: #e0e6ed; /* Lighter text color */
+    padding: 15px 25px; /* Increased padding */
+    height: 50px; /* Adjusted height */
+    border-radius: 25px;
+    flex: 1;
+    margin-right: 15px;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+    transition: all 0.3s ease;
+}
+
+.search input::placeholder {
+    color: #8c9aad; /* Placeholder color */
+}
+
+.search input:focus {
+    background: #142a45; /* Darken on focus */
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+/* Search Button */
+.search button {
+    border: 0;
+    outline: 0;
+    background: #4a74a1; /* Button color */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+    background: #6085b1; /* Lighter hover color */
+}
+
+.search button img {
+    width: 20px; /* Slightly larger icon */
+}
+
+/* Weather Information Section */
+.weather {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+}
+
+.weather-icon {
+    width: 150px; /* Adjusted size */
+    margin-top: 20px;
+}
+
+.weather h1 {
+    font-size: 70px; /* Adjusted font size */
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.weather h2 {
+    font-size: 35px; /* Adjusted font size */
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+/* Humidity and Wind Details */
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Spaced out columns */
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator line */
+    padding-top: 30px;
+}
+
+.col {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    text-align: center;
+}
+
+.col img {
+    width: 35px; /* Adjusted icon size */
+    margin-right: 10px;
+}
+
+.col div {
+    text-align: left;
+}
+
+.humidity, .wind {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.col p {
+    font-size: 14px;
+    color: #aeb4c0;
+}
+
+/* Error Message */
+.error {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    color: #e74c3c; /* A more visible error color */
+    display: none;
+}
